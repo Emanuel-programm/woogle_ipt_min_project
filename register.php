@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-    <div class="form-container">
+    <div class="auth-container">
         <h1>Register</h1>
 
         <?php if (isset($error)): ?>
@@ -56,18 +56,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <?php endif; ?>
 
         <form method="post">
-            <div>
-                <label>Username:</label>
-                <input type="text" name="username" required>
-            </div>
-            <div>
-                <label>Password:</label>
-                <input type="password" name="password" required>
-            </div>
-            <div>
-                <label>Confirm Password:</label>
-                <input type="password" name="confirm_password" required>
-            </div>
+
+            <label>Username:</label>
+            <input type="text" name="username" required>
+
+
+            <label>Password:</label>
+            <input type="password" name="password" required>
+
+
+            <label>Confirm Password:</label>
+            <input type="password" name="confirm_password" required>
+
             <button type="submit">Register</button>
         </form>
 

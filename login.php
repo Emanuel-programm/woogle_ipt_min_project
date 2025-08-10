@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 
 <body>
-    <div class="form-container">
+    <div class="auth-container">
         <h1>Login</h1>
 
         <?php if (isset($error)): ?>

@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     header("Location: dashboard.php");
                     exit();
                 } else {
-                    $message = '<div class="error">Error: ' . mysqli_error($conn) . '</div>';
+                    $message =   '<div class="error">Error: ' . mysqli_error($conn) . '</div>';
                 }
             } else {
                 $message = '<div class="error">Error uploading file.</div>';
